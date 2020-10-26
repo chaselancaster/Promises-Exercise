@@ -2,6 +2,10 @@
 
 // #1) Create a promise that resolves in 4 seconds and returns "success" string
 
+const promise = new Promise((resolve, reject) => {
+  setTimeout(resolve, 4000, 'success')
+})
+
 // #2) Run the above promise and make it console.log "success"
 
 
